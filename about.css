@@ -1,0 +1,245 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* Color Variables */
+	--primary-color: #340d83;
+	--secondary-color: #1a1a1a;
+	--border-color: #e3e1e1;
+	--description-color: #667085;
+	--light-purple: #f3f0ff;
+	/* Font Variables */
+	--primaryFontSize: 1.5rem;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 10px auto;
+	padding: 0 20px;
+}
+
+.border-b {
+	border-bottom: 1px solid var(--border-color);
+}
+
+/************************************************
+ * Header Styles 
+ ************************************************/
+.site-title {
+	font-size: var(--primaryFontSize);
+	color: var(--secondary-color);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+	gap: 20px;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+
+/************************************************
+ * Hero Section Styles
+ ************************************************/
+.hero-section {
+	background-color: var(--light-purple);
+	padding: 60px 20px;
+}
+
+.hero-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+.hero-content {
+	flex: 1;
+}
+
+.hero-title {
+	font-size: 3rem;
+	color: var(--secondary-color);
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.hero-image {
+	flex: 1;
+}
+
+.hero-image img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	display: block;
+}
+
+/************************************************
+ * About Content Section Styles
+ ************************************************/
+.about-content-section {
+	margin: 60px auto;
+	padding: 40px 0;
+}
+
+.about-text {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.about-paragraph {
+	font-size: 18px;
+	color: var(--description-color);
+	line-height: 1.8;
+	text-align: justify;
+}
+
+.drop-cap {
+	font-size: 3.5rem;
+	font-weight: bold;
+	color: var(--primary-color);
+	float: left;
+	line-height: 1;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+
+/************************************************
+ * Mission Section Styles
+ ************************************************/
+.mission-section {
+	margin: 60px auto;
+	padding: 40px 0;
+}
+
+.mission-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	margin-top: 30px;
+}
+
+.mission-card {
+	background-color: var(--light-purple);
+	padding: 30px;
+	border-radius: 8px;
+}
+
+.mission-title {
+	font-size: 1.3rem;
+	color: var(--primary-color);
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.mission-text {
+	font-size: 16px;
+	color: var(--description-color);
+	line-height: 1.6;
+}
+
+/************************************************
+ * Team/Features Section Styles
+ ************************************************/
+.section-title {
+	font-size: 1.5rem;
+	color: var(--primary-color);
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+.team-section {
+	margin: 60px auto;
+	padding: 40px 0;
+}
+
+.features-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 25px;
+	margin-top: 30px;
+}
+
+.feature-card {
+	background-color: #fff;
+	border: 1px solid var(--border-color);
+	padding: 25px;
+	border-radius: 8px;
+}
+
+.feature-title {
+	font-size: 1.1rem;
+	color: var(--secondary-color);
+	margin-bottom: 12px;
+	font-weight: bold;
+}
+
+.feature-description {
+	font-size: 14px;
+	color: var(--description-color);
+	line-height: 1.6;
+}
+
+/************************************************
+ * Footer Styles
+ ************************************************/
+.footer-section {
+	margin-top: 60px;
+	border-top: 1px solid var(--border-color);
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	font-size: 14px;
+	color: var(--description-color);
+}
+
+.footer-nav {
+	display: flex;
+	gap: 20px;
+	list-style: none;
+}
+
+.footer-nav a {
+	text-decoration: none;
+	color: var(--description-color);
+	font-size: 14px;
+}
+
+.footer-nav a:hover {
+	color: var(--primary-color);
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:visited {
+	color: inherit;
+}

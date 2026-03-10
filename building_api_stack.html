@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Building your API Stack - Blogify</title>
+		<link rel="stylesheet" href="building_api_stack.css" />
+	</head>
+	<body>
+		<!-- Header Section Start-->
+		<section class="border-b">
+			<header class="container header">
+				<a href="/" class="site-title">Blogify</a>
+				<nav>
+					<ul class="menu">
+						<li><a href="./index.html">Home</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="./projects.html">Projects</a></li>
+						<li><a href="./about.html">About</a></li>
+						<li><a href="#">Newsletter</a></li>
+					</ul>
+				</nav>
+			</header>
+		</section>
+		<!-- Header Section End -->
+
+		<!-- Blog Details Section Start -->
+		<section class="container blog-details-section">
+			<!-- Back Link -->
+			<a href="index.html" class="back-link">← Go back to blog</a>
+
+			<!-- Blog Meta Information -->
+			<div class="blog-meta">
+				<p class="blog-author">Lana Steiner • 1 Jan 2023</p>
+			</div>
+
+			<!-- Blog Title -->
+			<h1 class="blog-title-main">Building your API Stack</h1>
+
+			<!-- Blog Tags -->
+			<div class="blog-tags">
+				<button class="button-green">Design</button>
+				<button class="button-red">Research</button>
+			</div>
+
+			<!-- Blog Hero Image -->
+			<div class="blog-hero">
+				<img src="./images/bdp_section_3.png" alt="Building your API Stack" />
+			</div>
+
+			<!-- Blog Content -->
+			<div class="blog-content">
+				<!-- Introduction Section -->
+				<p class="blog-paragraph">
+					A solid API stack isn’t about chasing trends—it’s about choosing boring, dependable defaults that scale with your product. Let’s map a practical stack: routing, validation, auth, error handling, persistence, observability, and documentation.
+				</p>
+
+				<!-- Importance of Narrative Section -->
+				<h2 class="blog-section-title">Decide what you’re optimizing for</h2>
+				<p class="blog-paragraph">
+					Are you building for speed of iteration, strict correctness, heavy read traffic, or third‑party integrations? Your answers shape the stack. For example, a public API benefits from strong validation, rate limiting, and great docs; an internal API may prioritize shipping velocity.
+				</p>
+
+				<!-- Quote Section -->
+				<blockquote class="blog-quote">
+					"Consistency is a feature—clients love predictable errors and stable contracts."
+				</blockquote>
+
+				<!-- Key Elements Section -->
+				<h2 class="blog-section-title">Core building blocks</h2>
+				<p class="blog-paragraph">
+					These pieces make the difference between a demo API and a production API:
+				</p>
+				<ul class="blog-list">
+					<li>Request validation: reject bad input early with clear messages.</li>
+					<li>Auth & authorization: separate identity from permissions.</li>
+					<li>Error shape: one consistent format across endpoints.</li>
+					<li>Database layer: migrations, indexes, and safe query patterns.</li>
+					<li>Observability: logs, tracing, and metrics from day one.</li>
+				</ul>
+
+				<!-- Structuring Presentation Section -->
+				<h2 class="blog-section-title">Document the contract</h2>
+				<p class="blog-paragraph">
+					Whether you choose OpenAPI, typed clients, or a schema-first approach, treat your API contract like a product. Keep examples up to date, version intentionally, and make breaking changes rare and well communicated.
+				</p>
+			</div>
+		</section>
+		<!-- Blog Details Section End -->
+
+		<!-- Related Posts Section Start -->
+		<section class="container related-posts-section">
+			<h2 class="section-title">Related Posts</h2>
+			<div class="related-posts">
+				<div class="related-post-card">
+					<img src="./images/bdp_blog_1.png" alt="Grid system for better Design User Interface" />
+					<h2 class="blog-author">Olivia Rhye • 1 Jun 2023</h2>
+					<a href="#"><h3 class="related-post-title">Grid system for better Design User Interface</h3></a>
+					<p class="blog-description">
+						A grid system is a design tool used to arrange content on a webpage. It is a series of vertical and horizontal lines...
+					</p>
+					<div class="post-tags">
+						<button class="button-green">Design</button>
+						<button class="button-violet">Interface</button>
+					</div>
+				</div>
+
+				<div class="related-post-card">
+					<img src="./images/bdp_blog_2.png" alt="Leadership lessons from a 2-14 team into a 9-34 Super Bowl winning Dynasty" />
+					<h2 class="blog-author">Alice Whitaker • 1 Jun 2023</h2>
+					<a href="#"><h3 class="related-post-title">Leadership lessons from a 2-14 team into a 9-34 Super Bowl winning Dynasty</h3></a>
+					<p class="blog-description">
+						Like to know the secrets of transforming a 2-14 team into an 9-34 Super Bowl winning Dynasty?
+					</p>
+					<div class="post-tags">
+						<button class="button-green">Leadership</button>
+						<button class="button-red">Management</button>
+					</div>
+				</div>
+
+				<div class="related-post-card">
+					<img src="./images/bdp_blog_3.png" alt="PM mental models" />
+					<h2 class="blog-author">David Wilkinson • 1 Jun 2023</h2>
+					<a href="#"><h3 class="related-post-title">PM mental models</h3></a>
+					<p class="blog-description">
+						Mental models are simple expressions or abstractions of complex processes or relationships.
+					</p>
+					<div class="post-tags">
+						<button class="button-green">Product</button>
+						<button class="button-red">Research</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Related Posts Section End -->
+
+		<!-- Footer Section Start -->
+		<section class="border-b footer-section">
+			<footer class="container footer">
+				<p>© 2023 Blogify. All rights reserved.</p>
+				<nav class="footer-nav">
+					<a href="#">Twitter</a>
+					<a href="#">LinkedIn</a>
+					<a href="#">Email</a>
+					<a href="#">RSS feed</a>
+					<a href="#">Add to Feedly</a>
+				</nav>
+			</footer>
+		</section>
+		<!-- Footer Section End -->
+	</body>
+</html>

@@ -1,0 +1,269 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* Color Variables */
+	--primary-color: #340d83;
+	--secondary-color: #1a1a1a;
+	--border-color: #e3e1e1;
+	--description-color: #667085;
+	--light-blue: #f0f9ff;
+	--light-orange: #fff7ed;
+	/* Font Variables */
+	--primaryFontSize: 1.5rem;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 10px auto;
+	padding: 0 20px;
+}
+
+.border-b {
+	border-bottom: 1px solid var(--border-color);
+}
+
+/************************************************
+ * Header Styles 
+ ************************************************/
+.site-title {
+	font-size: var(--primaryFontSize);
+	color: var(--secondary-color);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+	gap: 20px;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+
+/************************************************
+ * Projects Header Section
+ ************************************************/
+.projects-header {
+	margin: 60px auto;
+	text-align: center;
+}
+
+.projects-title {
+	font-size: 2.5rem;
+	color: var(--secondary-color);
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.projects-subtitle {
+	font-size: 18px;
+	color: var(--description-color);
+	line-height: 1.6;
+}
+
+/************************************************
+ * Project Section Styles
+ ************************************************/
+.project-section {
+	padding: 60px 20px;
+	margin: 0;
+}
+
+.project-container {
+	display: flex;
+	align-items: center;
+	gap: 80px;
+}
+
+.project-1,
+.project-2,
+.project-3 {
+	flex-direction: row;
+}
+
+.project-image {
+	flex: 1;
+}
+
+.project-image img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	display: block;
+}
+
+.project-content {
+	flex: 1;
+	max-width: 450px;
+}
+
+.project-title {
+	font-size: 1.8rem;
+	color: var(--secondary-color);
+	margin-bottom: 10px;
+	line-height: 1.3;
+	font-weight: bold;
+}
+
+.project-author {
+	color: #6941c6;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.project-description {
+	font-size: 16px;
+	color: var(--description-color);
+	line-height: 1.8;
+	margin-bottom: 25px;
+	text-align: justify;
+}
+
+.project-buttons {
+	display: flex;
+	gap: 15px;
+	margin-top: 10px;
+}
+
+/************************************************
+ * Background Colors
+ ************************************************/
+.project-1-bg {
+	background-color: var(--light-blue);
+}
+
+.project-2-bg {
+	background-color: var(--light-orange);
+}
+
+/************************************************
+ * Button Styles
+ ************************************************/
+.button-green {
+	background-color: #ecfdf3;
+	color: #027a48;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 14px;
+	transition: background-color 0.2s ease;
+}
+
+.button-green:hover {
+	background-color: #d0fce0;
+}
+
+.button-blue {
+	background-color: #eff6ff;
+	color: #0369a1;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 14px;
+	transition: background-color 0.2s ease;
+}
+
+.button-blue:hover {
+	background-color: #e0f2fe;
+}
+
+.button-purple {
+	background-color: #faf5ff;
+	color: #7c3aed;
+	padding: 5px 10px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: background-color 0.2s ease;
+}
+
+.button-purple:hover {
+	background-color: #f3e8ff;
+}
+
+.button-red {
+	background-color: #fef2f2;
+	color: #b91c1c;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 14px;
+	transition: background-color 0.2s ease;
+}
+
+.button-red:hover {
+	background-color: #fee2e2;
+}
+
+/************************************************
+ * Footer Styles
+ ************************************************/
+.footer-section {
+	border-top: 1px solid var(--border-color);
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	font-size: 14px;
+	color: var(--description-color);
+}
+
+.footer-nav {
+	display: flex;
+	gap: 20px;
+	list-style: none;
+}
+
+.footer-nav a {
+	text-decoration: none;
+	color: var(--description-color);
+	font-size: 14px;
+}
+
+.footer-nav a:hover {
+	color: var(--primary-color);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:visited {
+	color: inherit;
+}
+
+/* Keep "button" links colored even after visiting */
+.button-green:visited,
+.button-green:link {
+	color: #027a48;
+}
