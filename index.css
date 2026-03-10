@@ -93,6 +93,7 @@ body {
 	cursor: pointer;
 	border-radius: 5px;
 	font-weight: bold;
+	display: inline-block;
 }
 .button-red {
 	background-color: #fef3f2;
@@ -102,6 +103,7 @@ body {
 	cursor: pointer;
 	border-radius: 5px;
 	font-weight: bold;
+	display: inline-block;
 }
 .button-violet {
 	background-color: #f5f3ff;
@@ -111,6 +113,7 @@ body {
 	cursor: pointer;
 	border-radius: 5px;
 	font-weight: bold;
+	display: inline-block;
 }
 .button-orange {
 	background-color: #fff7ed;
@@ -120,6 +123,7 @@ body {
 	cursor: pointer;
 	border-radius: 5px;
 	font-weight: bold;
+	display: inline-block;
 }
 .button-blue {
 	background-color: #f0f9ff;
@@ -129,6 +133,7 @@ body {
 	cursor: pointer;
 	border-radius: 5px;
 	font-weight: bold;
+	display: inline-block;
 }
 .button-purple {
 	background-color: #faf5ff;
@@ -138,10 +143,12 @@ body {
 	cursor: pointer;
 	border-radius: 5px;
 	font-weight: bold;
+	display: inline-block;
 }
 button:first-of-type {
 	margin-top: 12px;
 }
+
 .blog-grid {
 	display: flex;
 	gap: 10px;
