@@ -262,7 +262,7 @@ a:visited {
 	color: inherit;
 }
 
-/* Keep "button" links colored even after visiting */
+
 .button-green:visited,
 .button-green:link {
 	color: #027a48;
